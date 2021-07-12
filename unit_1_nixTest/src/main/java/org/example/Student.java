@@ -3,6 +3,7 @@ package org.example;
 public class Student {
     private String name;
     private String email;
+    private String email3;
 
     public String getName() {
         return name;
