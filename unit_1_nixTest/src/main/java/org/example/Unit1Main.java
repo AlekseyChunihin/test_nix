@@ -2,6 +2,8 @@ package org.example;
 
 public class Unit1Main {
     public static void main(String[] args) {
-        System.out.println("Hello world2");
+        Student student = new Student();
+        student.setName("John");
+        System.out.println("student = " + student);
     }
 }
