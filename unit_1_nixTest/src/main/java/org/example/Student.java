@@ -5,6 +5,12 @@ public class Student {
     private String email;
     private Book book;
 
+    public Student(String name, String email, Book book) {
+        this.name = name;
+        this.email = email;
+        this.book = book;
+    }
+
     public String getName() {
         return name;
     }
@@ -26,5 +32,10 @@ public class Student {
         return "Student{" +
                 "name= '" + name + '\'' +
                 '}';
+    }
+
+    public void print() {
+        System.out.println("Студент " + name + " имеет следующий аддрес электронной почты:" + email +
+                "\n и учится по книге " + book);
     }
 }
