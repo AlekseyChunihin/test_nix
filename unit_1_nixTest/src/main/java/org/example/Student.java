@@ -3,6 +3,21 @@ package org.example;
 public class Student {
     private String name;
     private String email;
+    private Book book;
+
+    public Student(String name, String email, Book book) {
+        this.name = name;
+        this.email = email;
+        this.book = book;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
 
     public Student(String name, String email) {
         this.name = name;
@@ -31,5 +46,10 @@ public class Student {
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    public void print() {
+        System.out.println("Студент " + name + " имеет следующий аддрес электронной почты:" + email +
+                "\n и учится по книге " + book);
     }
 }
